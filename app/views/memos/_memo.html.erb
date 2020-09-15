@@ -1,0 +1,4 @@
+<li>
+  <%= memo.text %>
+  <%= link_to '削除', "/memos/#{memo.id}", method: :delete, remote: true , data: { confirm: "削除しますか？" }%>
+</li>

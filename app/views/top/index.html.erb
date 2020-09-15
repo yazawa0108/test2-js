@@ -1,0 +1,119 @@
+<div class="tab-menu">
+  <ul>
+    <li id="left" class="selected">左タブ</li>
+    <li id="center">真ん中タブ</li>
+    <li id="right">右タブ</li>
+  </ul>
+
+  <div class="contents">
+    
+    <div class="left">
+      <p>お花コンテンツ</p>
+      <p>お花コンテンツ</p>
+      <div class="left-contents">
+        綺麗なお花
+      </div>
+    </div>
+    
+    <div class="center">
+      <p>お菓子コンテンツ</p>
+      <p>お花コンテンツ</p>
+
+    </div>
+    <div class="center-contents">
+        美味しいお菓子
+    </div>
+    
+    <div class="right">
+      <p>お魚コンテンツ</p>
+    </div>
+    <div class="right-contents">
+        素敵なお魚
+    </div>
+  </div>
+</div>
+
+<%= form_for @memo, remote: true, data: {"turbolinks" => true} do |f| %>
+  <%= f.text_field :text %>
+  <%= f.submit '投稿' %>
+<% end %>
+<ul class="memo">
+  <%= render @memos %>
+</ul>
+
+    <div class="slick1">
+      <div><%= image_tag '1.jpg', class:'image' %></div>
+      <div><%= image_tag '2.jpg', class:'image' %></div>
+      <div><%= image_tag '3.jpg', class:'image' %></div>
+      <div><%= image_tag '4.jpg', class:'image' %></div>
+      <div><%= image_tag '5.jpg', class:'image' %></div>
+      <div><%= image_tag '6.jpg', class:'image' %></div>
+    </div>
+
+    <div class="modal-test">
+        <a class="js-modal-open" href="">クリックでモーダルを表示</a>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <p>ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+            <div class="nav-bar">
+              <a class="js-modal-close btn-color" href="">閉じる</a>
+              <a class="js-modal-close btn-color" href="">しめる</a>
+            </div>
+        </div><!--modal__inner-->
+    </div>
+    
+    <div>
+      <button id="1">ボタン</button>
+      <button id="2">ボタン</button>
+      <button id="3">ボタン</button>
+      <button id="4">ボタン</button>
+      <button id="5">ボタン</button>
+    </div>
+    
+    <script src="assets/javascripts/jquery.raty.js"></script>
+    <div id="star"></div>
+
+
+<!--< @memos.each do |memo| %>-->
+<!--    <= render partial: "memos/memo", locals: {memo: memo} %>-->
+    
+<!--< end %>-->
+
+
+<!--<p id="btn">-->
+<!--  ボタンが・・-->
+<!--</p>-->
+<!--<input type="button" value="ボタン">-->
+
+
+<!--DOMとはブラウザが持っている、オブジェクトに関するデータ、関数-->
+<!--DOMとは何かを理解するために、-->
+<!--var p = document.querySelector('p');-->
+<!--console.dir(p);-->
+
+<!--を行なって、DOMとして取り出しているものが何かを調べる必要がある-->
+
+<!--jQueryオブジェクトは、DOMオブジェクトの要素に加えて、そのオブジェクトが使えるメソッドも持ち合わせている。-->
+<!--そのため、より具体化されているが、使い方には制限がある-->
+
+
+<!--<div class="tab-menu">-->
+<!--  <ul>-->
+<!--    <li id="left" class="selected">左タブ</li>-->
+<!--    <li id="right">右タブ</li>-->
+<!--  </ul>-->
+
+<!--  <div class="contents">-->
+    
+<!--    <div class="left">-->
+<!--      <p>お花コンテンツ</p>-->
+<!--    </div>-->
+    
+<!--    <div class="right">-->
+<!--      <p>お魚コンテンツ</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
